@@ -29,6 +29,9 @@
 			footer{
 				font-size: 0.8rem;
 			}
+			footer a{
+				text-decoration: none;
+			}
 			a{
 				color: #099ed5;
 			}
@@ -37,7 +40,7 @@
 			}
 			
 			h1,h2,h3{
-				font-family: "Montserrat", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+				font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
 				line-height: 1.2;
 				color: #4b4b4D;
 				font-weight: 400;
@@ -53,13 +56,91 @@
 			figure{
 				font-size: 1rem;
 			}
+			.logo{
+				max-width: 50vw;
+			}
 			.main-photo{
-				height: 40vh;
+				height: 20vh;
 				width: 100%;
 				background-color: #099ed5;
 				//background-image: url('http://placehold.it/1920x400');
 				background-size: cover;
 				background-position: center center;
+			}
+			.team {
+				margin: 2rem 0;
+			}
+			.team figure{
+				display: inline-block;
+				min-width: 33%;
+				margin: 1rem 0;
+				text-align: center;
+			}
+			.team figure img{
+				border-radius: 50rem;
+				border: 3px solid #099ed5;
+			}
+			.team figure figcaption div{
+				font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+				color: #099ed5;
+			}
+			.contact-form, .contact-form input, .contact-form select, .contact-form textarea, .contact-form button{
+				font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+				
+				font-size: 1.6rem;
+			}
+			.contact-form{
+				margin: 2rem 0;
+				padding: 1rem;
+				border: 1px solid #999;
+			}
+			.contact-form input, .contact-form select, .contact-form textarea{
+				border: 0;
+				border-bottom: 2px dotted #099ed5;
+				padding: 0;
+				margin: 0;
+				//color:#302e2f;
+				color: #099ed5;
+				background: 0;
+			}
+			.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus{
+				outline: none;
+			}
+			.contact-form textarea{
+				overflow: hidden;
+				margin-top: 0.5rem;
+				word-wrap: break-word;
+			}
+			.contact-form button{
+				background: none;
+				border: 2px solid #099ed5;
+				border-radius: none;
+				color: #099ed5;
+				padding: 0.5rem 1rem;
+			    margin-top: 0.5rem;
+			    text-transform: uppercase;
+			    font-size: 1.2rem;
+			    cursor: pointer;
+			}
+			.contact-form button:hover{
+				background-color: #099ed5;
+				color: #fff;
+			}
+			.contact-flex{
+				display: flex;
+				-webkit-flex-flow: row wrap;
+  				justify-content: space-around;
+  				align-items: center;
+			}
+			.contact-info{
+				text-align: center;
+				display: inline-block;
+				min-width: 25%;
+			}
+			.contact-info span{
+				font-size: 0.8rem;
+				color: #4b4b4D;
+				font-weight: 700;
 			}
 			
 		</style>
@@ -69,7 +150,7 @@
 			<nav>
 				<a href="#">
 					<!--<img src="http://placehold.it/320x100" width="320" height"100"/>-->
-					<img src="ies-logo.png" width="320" height"100"/>
+					<img class="logo" src="ies-logo.png" width="320" height"100"/>
 				</a>
 			</nav>
 		</header>
@@ -109,24 +190,74 @@
 			<p>Oh! The garbage chute was a really wonderful idea. What an incredible smell you've discovered! Let's get out of here! Get away from there... No! wait! Will you forget it? I already tried it. It's magnetically sealed! Put that thing away! You're going to get us all killed. Absolutely, Your Worship. Look, I had everything under control until you led us down here. You know, it's not going to take them long to figure out what happened to us. It could be worst... It's worst. There's something alive in here! That's your imagination. Something just moves past my leg! Look! Did you see that? What? Help!</p>
 
 			<p>Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time. They are now conducting an extensive search of the surrounding systems. She lied! She lied to us! I told you she would never consciously betray the Rebellion. Terminate her...immediately!</p>
+			
+			<div class="team">
+				<figure>
+					<img src="http://placehold.it/120x120" width="120" height"120"/>
+					<figcaption><div>Rob McDermid</div>Director, Strategic Business</figcaption>
+				</figure>
+				<figure>
+					<img src="http://placehold.it/120x120" width="120" height"120"/>
+					<figcaption><div>Bryan Unger</div>Guy</figcaption>
+				</figure>
+				<figure>
+					<img src="http://placehold.it/120x120" width="120" height"120"/>
+					<figcaption><div>Scott Vincent</div>Designer</figcaption>
+				</figure>
+				<figure>
+					<img src="http://placehold.it/120x120" width="120" height"120"/>
+					<figcaption><div>Jerry Chappell</div>Senior Developer</figcaption>
+				</figure>
+				<figure>
+					<img src="http://placehold.it/120x120" width="120" height"120"/>
+					<figcaption><div>Corey Downie</div>Senior Developer</figcaption>
+				</figure>
+				<figure>
+					<img src="http://placehold.it/120x120" width="120" height"120"/>
+					<figcaption><div>Andrew Suppa</div>Developer</figcaption>
+				</figure>
+			</div>
 
 			<h2>contact</h2>
 			<h4>Get in touch by messaging, emailing, faxing, or sending your best carrier pigeon to our office.</h4>
-			
-			569 Consortium Court<br>London ON, Canada<br>N6E 2S8<br>
-			info@iesgroup.ca<br>
-			phone 519.964.0020<br>
-			fax 519.964.0021<br>
-			<a href="https://www.linkedin.com/company/ies-group-inc" target="_blank">LinkedIn</a>
-			<form>
-				<input type="name" placeholder="Name">
-				<input type="email" placeholder="Email">
-				<textarea placeholder="Message"></textarea>
-				<button type="submit">Send</button>
+			<form class="contact-form">
+				Hi, my name is 
+				<input required type="name" placeholder="Rick Grimes">
+				and I'm contacting you today in regards to
+				<select><option disabled selected>the zombie apocalypse</option><option>new business</option><option>job openings</option><option>sales</option><option>support</option><option>other things</option></select>.
+				<br>
+				<textarea required placeholder="What's the best way to secure a prison?" rows="1" style="width: 100%;"></textarea>
+				<br>
+				You can reach me at 
+				<input type="email" placeholder="rgrimes@gasheriff.gov"> or <input type="tel" placeholder="555-555-5555">
+				<br>
+				<button type="submit">Send Message</button>
 			</form>
+			<div class="contact-flex">
+				<div class="contact-info">569 Consortium Court<br>London, ON, Canada<br>N6E 2S8</div>
+				<div class="contact-info">info@iesgroup.ca<br><span>EMAIL</span></div>
+				<div class="contact-info">519.964.0020<br><span>PHONE</span></div>
+				<div class="contact-info">519.964.0021<br><span>FAX</span></div>
+			</div>
+			
+			
 		</main>
 		<footer>
-			&copy; 2015 IES Group Inc. All Rights Reserved
+			&copy; 2015 IES Group Inc. All Rights Reserved 
+			<div style="float: right;">
+				<a href="https://www.linkedin.com/company/ies-group-inc" target="_blank">LinkedIn</a> &nbsp;&nbsp;
+				<a href="https://twitter.com/IESGroup" target="_blank">Twitter</a> &nbsp;&nbsp;
+				<a href="http://www.facebook.com/pages/IES-Group-Inc/136235419780609?fref=ts" target="_blank">Facebook</a>
+			</div>
 		</footer>
+		<script>
+			var te = document.querySelector('textarea');
+		    te.addEventListener('keyup', resizeTextarea);
+
+		    function resizeTextarea(ev) {
+		        this.style.height = '20px';
+		        this.style.height = this.scrollHeight + 0 + 'px';
+		    }
+		</script>
 	</body>
 </html>
