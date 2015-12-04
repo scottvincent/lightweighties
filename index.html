@@ -68,12 +68,24 @@
 				max-width: 50vw;
 			}
 			.main-photo{
-				height: 20vh;
+				height: 16vh;
 				width: 100%;
 				background-color: #099ed5;
 				//background-image: url('http://placehold.it/1920x400');
 				background-size: cover;
 				background-position: center center;
+				overflow: hidden;
+				position: relative;
+			}
+			.element{
+				width: 20vh;
+				height: 20vh;
+				position: absolute;
+				transform: rotate(45deg);
+				left: 50%;
+				top: -12vh;
+				background: #fff;
+				border: 2vh solid #6ac7e9;
 			}
 			.work{
 				margin: 1rem 0;
@@ -227,11 +239,11 @@
 			<nav>
 				<a href="#">
 					<!--<img src="http://placehold.it/320x100" width="320" height"100"/>-->
-					<img class="logo" src="img/ies-logo.png" width="320" height"100"/>
+					<img class="logo" src="img/ies-logo.png" width="320" height="100"/>
 				</a>
 			</nav>
 		</header>
-		<div class="main-photo"></div>
+		<div class="main-photo"><div class="element element1"></div></div>
 		<main>
 			<h2>work</h2>
 			<div class="work">
