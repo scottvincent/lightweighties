@@ -212,6 +212,9 @@
 		.social{
 			float: right;
 		}
+		#loading{
+			display: none;
+		}
 		@media (max-width: 768px){
 			html{
 				font-size: 16px;
@@ -333,7 +336,7 @@
 
 		<h2>contact</h2>
 		<p>Get in touch by messaging, emailing, faxing, or sending your best carrier pigeon to our office.</p>
-		<form action="https://docs.google.com/a/iesgroup.on.ca/forms/d/1PzG-DPZ08ilveZGJmIiNRlLweAp0QljUNRtnuur2_uY/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" class="contact-form">
+		<form action="https://docs.google.com/a/iesgroup.on.ca/forms/d/1PzG-DPZ08ilveZGJmIiNRlLweAp0QljUNRtnuur2_uY/formResponse" method="POST" id="ss-form" target="secret-frame" onsubmit="" class="contact-form">
 			
 			Hello IES Group, my name is 
 			<input placeholder="Rick Grimes" type="text" name="entry.1810588757" value="" class="ss-q-short" id="entry_1810588757" dir="auto" aria-label="Your Name  " title="">
@@ -357,7 +360,7 @@
 			<input type="hidden" name="pageHistory" value="0">
 			<input type="hidden" name="fvv" value="0">
 			<input type="hidden" name="fbzx" value="-6342646090497786181">
-			<button type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">Send Message</button>
+			<button type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">Send Message</button><div id="loading">Loading</div>
 		</form>
 		<div class="contact-flex">
 
@@ -375,8 +378,19 @@
 		<a href="http://www.facebook.com/pages/IES-Group-Inc/136235419780609?fref=ts" target="_blank">Facebook</a>
 	</div>
 </footer>
-
+<iframe name="secret-frame" width="0" height="0" border="0" style="display: none;"></iframe>
 	<script>
+		document.getElementById("ss-submit").addEventListener("click", function(){
+		  
+		  
+		  document.getElementById("loading").style.display = 'inline-block';	
+		  // replace "ss-form" with the ID of your form
+		 
+		  setTimeout(function() { 
+		  	document.getElementById("ss-form").reset();
+		    document.getElementById("ss-form").innerHTML = "<div style='text-align:center'>Thanks for the message, we'll get back to you shortly.</div>" ;
+		  }, 5000);
+		});
 
 		var te = document.querySelector('textarea');
 		te.addEventListener('keyup', resizeTextarea);
