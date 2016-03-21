@@ -1,0 +1,312 @@
+// Dark Blue #1F4283
+// Light Blue #4883C4
+// Light Teal #449A9E
+// Dark Teal #1F8478
+// Sky Blue #B0CDE6
+// Dark Grey #302E2F
+// Light Grey #4B4B4D
+
+html{
+	font-size:18px;
+}
+body{
+	font-family: "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+	margin: 0;
+	line-height:1.6;
+	color:#302e2f;
+}
+main, footer{
+	max-width:1024px;
+	margin:40px auto;
+	padding:0 10px;
+}
+header{
+	text-align: center;
+	padding:0 10px;
+	background: #1F4283;
+	border-bottom: 0.75rem solid #4883C4;
+}
+footer{
+	font-size: 0.8rem;
+}
+footer a{
+	text-decoration: none;
+}
+a{
+	color: #1F8478;
+}
+a:hover{
+	color: #449A9E;
+}
+hr{
+	border: none;
+	border-top: 0.2rem solid #4883c4;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+h1,h2,h3{
+	font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+	line-height: 1.2;
+	color: #4b4b4D;
+	font-weight: 400;
+}
+h2{
+	color: #4883C4;
+	line-height: 1;
+	margin: 0;
+	font-size: 2.5rem;
+	letter-spacing: -0.1rem;
+}
+figure{
+	font-size: 0.8rem;
+}
+.logo{
+	max-width: 50vw;
+}
+.main-photo{
+	height: 10px;
+	width: 100%;
+	background-color: #4883C4;
+	//background-image: url('http://placehold.it/1920x400');
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+	position: relative;
+}
+.work{
+	margin: 1rem 0;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: stretch;
+}
+.work figure{
+	display: inline-block;
+	width: 50%;
+	margin: 0;
+}
+.work figure figcaption{
+	padding: 0.5rem;
+	
+}
+.work figure figcaption div{
+	font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+	color: #4883c4;
+	font-size: 1.1rem;
+}
+.clients {
+	margin: 0 0 1rem 0;
+}
+.clients figure{
+	display: inline-block;
+	width: 24.5%;
+	margin: 0;
+	text-align: center;
+	opacity: 0.4;
+}
+.team {
+	margin: 2rem 0;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: stretch;
+}
+.team figure{
+	display: inline-block;
+	min-width: 33%;
+	margin: 1rem 0;
+	text-align: center;
+}
+.team figure img{
+	border-radius: 50rem;
+	border: 0.4rem solid #1F4283;
+}
+.team figure figcaption div{
+	font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+	color: #4883c4;
+	font-size: 1.1rem;
+}
+.logos {
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: flex-start;
+	margin-bottom: 2rem;
+}
+.logos figure{
+	margin: 0.5rem 1rem;
+}
+.logos figure figcaption{
+	margin-bottom: 0.5rem;
+}
+.logos figure figcaption div{
+	font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+	color: #4B4B4D;
+	display: block;
+}
+.logos figure figcaption a{
+	background: none;
+	border: 1px solid #1F8478;
+	color: #1F8478;
+	padding: 0.3em 0.75em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+	cursor: pointer;
+}
+.logos figure figcaption a:hover{
+	background-color: #1F8478;
+	color: #fff;
+	text-decoration: none;
+}
+.logos figure img{
+	box-shadow: 0 0 0px 1px #4b4b4d;
+	display: block;
+	margin-bottom: 0.5rem;
+}
+.logo-white{
+	background-color: #1F4283;
+	border-color: #fff;
+}
+.palette {
+	display: flex;
+	-webkit-flex-flow: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	margin-bottom: 2rem;
+}
+.palette figure{
+	min-height: 50px;
+	padding: 1rem;
+	margin: 0 2px 1rem;
+	flex-grow: 1;
+}
+.palette figure figcaption{
+	font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+	display: inline-block;
+	float: left;
+}
+.palette figure.dark-blue{
+	background: #1F4283;
+	color: #fff;
+}
+.palette figure.light-blue{
+	background: #4883C4;
+	color: #fff;
+}
+.palette figure.dark-teal{
+	background: #1F8478;
+	color: #fff;
+}
+.palette figure.light-teal{
+	background: #449A9E;
+	color: #fff;
+}
+.palette figure.grey{
+	background: #4B4B4D;
+	color: #fff;
+}
+.palette figure.dark-grey{
+	background: #302E2F;
+	color: #fff;
+}
+.verdana{
+	font-family: Verdana, Arial, sans-serif;
+}
+.contact-form, .contact-form input, .contact-form select, .contact-form textarea, .contact-form button{
+	font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+
+	font-size: 1.6rem;
+}
+.contact-form{
+	margin: 1rem 0 2rem;
+	padding: 1rem;
+	border: 1px solid #449A9E;
+}
+.contact-form input, .contact-form select, .contact-form textarea{
+	border: 0;
+	border-bottom: 2px dotted #449A9E;
+	padding: 0;
+	margin: 0;
+	color: #1F8478;
+	border-radius: 0;
+	max-width: 100%;
+	background: 0;
+}
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus{
+	outline: none;
+}
+.contact-form textarea{
+	overflow: hidden;
+	margin-top: 0.5rem;
+	word-wrap: break-word;
+}
+.contact-form button{
+	background: none;
+	border: 2px solid #1F8478;
+	border-radius: none;
+	color: #1F8478;
+	padding: 0.5rem 1rem;
+	margin-top: 0.5rem;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+.contact-form button:hover{
+	background-color: #1F8478;
+	color: #fff;
+}
+.contact-flex{
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.contact-info{
+	text-align: center;
+	display: inline-block;
+	min-width: 25%;
+	font-size: 1.2rem;
+	color: #4883C4;
+	font-weight: 700;
+}
+.contact-info span{
+	font-size: 0.8rem;
+	color: #4b4b4D;
+	font-weight: 700;
+}
+.address{
+	text-align: center;
+	margin-top: 1rem;
+	color: #777;
+}
+.social{
+	float: right;
+}
+#loading{
+	display: none;
+}
+@media (max-width: 768px){
+	html{
+		font-size: 16px;
+	}
+	.work figure{
+		width: 100%;
+	}
+	.clients figure{
+		width: 32.5%;
+	}
+	.contact-form, .contact-form input, .contact-form select, .contact-form textarea, .contact-form button{
+		font-size: 1.2rem;
+	}
+	footer{
+		text-align: center;
+	}
+	.social{
+		float: none;
+	}
+}
