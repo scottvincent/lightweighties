@@ -124,6 +124,10 @@ figure{
 }
 .client-types {
 	margin: 0 0 1rem 0;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: center;
+	align-items: stretch;
 }
 .client-types figure{
 	display: inline-block;
