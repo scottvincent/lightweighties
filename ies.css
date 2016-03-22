@@ -15,16 +15,20 @@ body{
 	line-height:1.6;
 	color:#302e2f;
 }
-main, footer{
+main, .clients, footer, .about, .contact, .work{
 	max-width:1024px;
-	margin:40px auto;
-	padding:0 10px;
+	margin:0px auto;
+	padding: 1rem 10px;
 }
 header{
 	text-align: center;
 	padding:0 10px;
 	background: #1F4283;
 	border-bottom: 0.75rem solid #4883C4;
+}
+header.home{
+	background: transparent;
+	border: none;
 }
 footer{
 	font-size: 0.8rem;
@@ -40,7 +44,7 @@ a:hover{
 }
 hr{
 	border: none;
-	border-top: 0.2rem solid #4883c4;
+	border-top: 0.2rem solid #449A9E;
 }
 img{
 	max-width: 100%;
@@ -53,12 +57,17 @@ h1,h2,h3{
 	color: #4b4b4D;
 	font-weight: 400;
 }
-h2{
+h1{
 	color: #4883C4;
 	line-height: 1;
 	margin: 0;
-	font-size: 2.5rem;
+	font-size: 2.7rem;
 	letter-spacing: -0.1rem;
+}
+h2{
+	font-size: 2.3rem;
+	line-height: 1;
+	margin-bottom: 0;
 }
 figure{
 	font-size: 0.8rem;
@@ -67,48 +76,75 @@ figure{
 	max-width: 50vw;
 }
 .main-photo{
-	height: 10px;
+	height: 60vw;
+	max-height: 60vh;
 	width: 100%;
-	background-color: #4883C4;
-	//background-image: url('http://placehold.it/1920x400');
+	background-color: #eee;
+	background-image: url('img/header-image.jpg');
 	background-size: cover;
 	background-position: center center;
 	overflow: hidden;
 	position: relative;
 }
+.work-container{
+	background: #449A9E;
+	//background: #302E2F;
+	background: #4883C4;
+	background: #1F4283;
+	position: relative;
+}
 .work{
+	color: #fff;
+}
+.work h2{
+	color: rgba(255,255,255,0.6);
+}
+.work-types{
 	margin: 1rem 0;
 	display: flex;
 	-webkit-flex-flow: row wrap;
 	justify-content: space-around;
 	align-items: stretch;
 }
-.work figure{
+.work-types figure{
 	display: inline-block;
 	width: 50%;
 	margin: 0;
 }
-.work figure figcaption{
+.work-types figure figcaption{
 	padding: 0.5rem;
 	
 }
-.work figure figcaption div{
+.work-types figure figcaption div{
 	font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-	color: #4883c4;
 	font-size: 1.1rem;
 }
-.clients {
+.clients{
+
+}
+.client-types {
 	margin: 0 0 1rem 0;
 }
-.clients figure{
+.client-types figure{
 	display: inline-block;
 	width: 24.5%;
 	margin: 0;
 	text-align: center;
 	opacity: 0.4;
 }
+.about-container{
+	background: #4883C4;
+}
+.about{
+	color: #fff;
+}
+
+.about h2{
+	color: rgba(255,255,255,0.6);
+}
+
 .team {
-	margin: 2rem 0;
+	margin:  0;
 	display: flex;
 	-webkit-flex-flow: row wrap;
 	justify-content: space-around;
@@ -116,9 +152,9 @@ figure{
 }
 .team figure{
 	display: inline-block;
-	min-width: 33%;
-	margin: 1rem 0;
+	margin: 1rem;
 	text-align: center;
+	color: rgba(255,255,255,0.6);
 }
 .team figure img{
 	border-radius: 50rem;
@@ -126,7 +162,7 @@ figure{
 }
 .team figure figcaption div{
 	font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-	color: #4883c4;
+	color: #fff;
 	font-size: 1.1rem;
 }
 .logos {
@@ -247,9 +283,9 @@ figure{
 }
 .contact-form button{
 	background: none;
-	border: 2px solid #1F8478;
+	border: 2px solid #449A9E;
 	border-radius: none;
-	color: #1F8478;
+	color: #449A9E;
 	padding: 0.5rem 1rem;
 	margin-top: 0.5rem;
 	text-transform: uppercase;
@@ -257,7 +293,7 @@ figure{
 	cursor: pointer;
 }
 .contact-form button:hover{
-	background-color: #1F8478;
+	background-color: #449A9E;
 	color: #fff;
 }
 .contact-flex{
@@ -271,7 +307,8 @@ figure{
 	display: inline-block;
 	min-width: 25%;
 	font-size: 1.2rem;
-	color: #4883C4;
+	color: #1F8478;
+	text-decoration: none;
 	font-weight: 700;
 }
 .contact-info span{
@@ -281,8 +318,9 @@ figure{
 }
 .address{
 	text-align: center;
-	margin-top: 1rem;
-	color: #777;
+	margin-top: 2rem;
+	color: #4B4B4D;
+    font-size: 1.2rem;
 }
 .social{
 	float: right;
