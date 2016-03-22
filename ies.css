@@ -44,7 +44,7 @@ a:hover{
 }
 hr{
 	border: none;
-	border-top: 0.2rem solid #449A9E;
+	border-top: 0.2rem solid #1F8478;
 }
 img{
 	max-width: 100%;
@@ -89,8 +89,8 @@ figure{
 .work-container{
 	background: #449A9E;
 	//background: #302E2F;
-	background: #4883C4;
-	background: #1F4283;
+	//background: #4883C4;
+	//background: #1F4283;
 	position: relative;
 }
 .work{
