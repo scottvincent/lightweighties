@@ -408,7 +408,9 @@ figure{
 		margin: 0;
 	}
 	.work-item{
-		margin: 0.25rem;
+		margin: 0.25rem 0;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	.clients figure{
 		width: 32.5%;
