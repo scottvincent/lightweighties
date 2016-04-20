@@ -116,6 +116,11 @@ figure{
 	position: relative;
 	color: #fff;
 	margin: 0 1px;
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
 }
 
 .work-left{
@@ -173,7 +178,7 @@ figure{
 .work h2{
 	color: rgba(255,255,255,0.8);
 	text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 0;
     line-height: 1.2;
 }
