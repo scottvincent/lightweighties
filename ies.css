@@ -269,6 +269,7 @@ figure{
 	-webkit-flex-flow: row wrap;
 	justify-content: center;
 	align-items: stretch;
+	flex-wrap: wrap;
 }
 .client-types figure{
 	display: inline-block;
