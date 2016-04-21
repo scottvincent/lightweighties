@@ -147,40 +147,103 @@ figure{
 }
 .work-item{
 	padding: 15vh 1rem 0;
-	margin: 1px;
+	margin: 0.125rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	//background-image: url("http://placehold.it/500x500");
 	background-color: #302E2F;
-	background-position: center center;
-	background-size: cover;
+	position: relative;
+	overflow: hidden;
 }
 .work-item-1{
-	background-color: #1F8478;
+	background-color: #1F4283;
+	min-height: 240px;
 }
 .work-item-2{
 	flex: 1;
-	background-color: #4883C4;
+	min-height: 170px;
+	background-color: #1F8478;
 }
 .work-item-3{
-	background-color: #302E2F;
+	background-color: #1F4283;
+	min-height: 120px;
 }
 .work-item-4{
 	flex: 2;
-	background-color: #1F4283;
+	background-color: #4883C4;
 }
 .work-item-5{
 	flex: 2;
 	background-color: #449A9E;
 }
+.work-img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background-size: cover;
+	background-position: top left;
+	-webkit-filter: grayscale(100%) opacity(0.7);
+	filter: grayscale(100%) opacity(0.7);
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
 
+}
+.work-item:hover .work-img{
+	-webkit-filter: grayscale(0%) opacity(1);
+	filter: grayscale(0%) opacity(1);
+}
+.work-img-1{
+	background-image: url("img/header-mediasonar.png");
+} 
+.work-img-2{
+	background-image: url("img/header-daimler.png");
+} 
+.work-img-3{
+	background-image: url("img/header-wisdom.png");
+	background-position: bottom left;
+} 
+.work-img-4{
+	background-image: url("img/header-diply.png");
+} 
+.work-img-5{
+	background-image: url("img/header-connex.png");
+} 
 .work h2{
-	color: rgba(255,255,255,0.8);
 	text-transform: uppercase;
     font-size: 1.8rem;
     margin: 0;
     line-height: 1.2;
+    z-index: 1;
+    background-color: #fff;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+.work-item-1 h2{
+	color: #1F4283;
+}
+.work-item-2 h2{
+	color: #1F8478;
+}
+.work-item-3 h2{
+	color: #1F4283;
+}
+.work-item-4 h2{
+	color: #4883C4;
+}
+.work-item-5 h2{
+	color: #449A9E;
+}
+.work-item p{
+	z-index: 1;
+	color: #fff;
+    background-color: #302E2F;
+	padding: 0.25rem 0.5rem;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
 }
 .work-types{
 	margin: 1rem 0;
