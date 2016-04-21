@@ -219,8 +219,7 @@ figure{
     line-height: 1.2;
     z-index: 1;
     background-color: #fff;
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+    padding: 0.25rem 0.5rem;
 }
 .work-item-1 h2{
 	color: #1F4283;
@@ -458,6 +457,11 @@ figure{
 }
 #loading{
 	display: none;
+}
+@media (max-width: 1024px){
+	.work h2{
+		font-size: 1.4rem;
+	}
 }
 @media (max-width: 768px){
 	html{
