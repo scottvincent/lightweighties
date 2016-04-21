@@ -158,13 +158,11 @@
 			<input type="hidden" name="pageHistory" value="0">
 			<input type="hidden" name="fvv" value="0">
 			<input type="hidden" name="fbzx" value="-6342646090497786181">
-			<button type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">Send Message</button><div id="loading">Loading</div>
+			<button type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">Send Message</button><div id="loading">Sending...</div>
 		</form>
 		<div class="contact-flex">
 			<div class="contact-info">info@iesgroup.ca<br><span>EMAIL</span></div>
 			<div class="contact-info">519.964.0020<br><span>PHONE</span></div>
-			
-			
 		</div>
 		<div class="address">345 Horton St. E, London, ON, Canada, N6B 1L6</div>
 	</main>
@@ -183,7 +181,8 @@
 		document.getElementById("ss-submit").addEventListener("click", function(){
 		  
 		  
-		  document.getElementById("loading").style.display = 'inline-block';	
+		  document.getElementById("loading").style.display = 'inline-block';
+		  document.getElementById("ss-submit").style.display = 'none';
 		  // replace "ss-form" with the ID of your form
 		 
 		  setTimeout(function() { 

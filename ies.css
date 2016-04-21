@@ -405,7 +405,7 @@ figure{
 	background: 0;
 }
 .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus{
-	outline: none;
+	//outline: none;
 }
 .contact-form textarea{
 	overflow: hidden;
@@ -458,6 +458,8 @@ figure{
 }
 #loading{
 	display: none;
+	margin: 0.5rem 1rem;
+	color: #449A9E;
 }
 @media (max-width: 1024px){
 	.work h2{
