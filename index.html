@@ -24,17 +24,47 @@
 			<div class="work">
 				<div class="work-left">
 					<div class="work-nested">
-						<div class="work-item work-item-1"><h2>Web Applications</h2><p>Complex, useful, web applications built with the end user experience in mind. Using up to date technologies and keeping up with design trends make for well received end products.</p><div class="work-img work-img-1"></div></div>
-						<div class="work-item work-item-2"><h2>Technology Infrastructure</h2><p>Assess hardware and software environment goals. Overcoming challenges to provide the cost effective, vendor agnostic, path to achieve your goals. Identify risk, scale, and deliver effectively.</p><div class="work-img work-img-2"></div></div>
+						<div class="work-item work-item-1" onclick="toggle_visibility('work-description-1');">
+							<h2>Web Applications</h2>
+							<div class="work-description-container" style="max-height: 0px" id="work-description-1">
+								<p>Complex, useful, web applications built with the end user experience in mind. Using up to date technologies and keeping up with design trends make for well received end products.</p>
+							</div>
+							<div class="work-img work-img-1"></div>
+						</div>
+						<div class="work-item work-item-2" onclick="toggle_visibility('work-description-2');">
+							<h2>Technology Infrastructure</h2>
+							<div class="work-description-container" style="max-height: 0px" id="work-description-2">
+								<p>Assess hardware and software environment goals. Overcoming challenges to provide the cost effective, vendor agnostic, path to achieve your goals. Identify risk, scale, and deliver effectively.</p>
+							</div>
+							<div class="work-img work-img-2"></div>
+						</div>
 					</div>
 				</div>
 				<div class="work-right">
 					<div class="work-nested">
 						<div class="work-right-nested">
-							<div class="work-item work-item-4"><h2>Big Idea Incubator</h2><p>Enabling ideas to be built from the ground up into skyscrapers.</p><div class="work-img work-img-4"></div></div>
-							<div class="work-item work-item-5"><h2>Healthcare Solutions</h2><p>Deep vertical expertise in one of the most complex industries that exist today. We help healthcare providers meet the huge market demand for real-time information sharing and collaboration. Highly secure. Cost effective. Policy aware.</p><div class="work-img work-img-5"></div></div>
+							<div class="work-item work-item-4" onclick="toggle_visibility('work-description-4');">
+								<h2>Big Idea Incubator</h2>
+								<div class="work-description-container" style="max-height: 0px" id="work-description-4">
+									<p>Enabling ideas to be built from the ground up into skyscrapers.</p>
+								</div>
+								<div class="work-img work-img-4"></div>
+							</div>
+							<div class="work-item work-item-5" onclick="toggle_visibility('work-description-5');">
+								<h2>Healthcare Solutions</h2>
+								<div class="work-description-container" style="max-height: 0px" id="work-description-5">
+									<p>Deep vertical expertise in one of the most complex industries that exist today. We help healthcare providers meet the huge market demand for real-time information sharing and collaboration. Highly secure. Cost effective. Policy aware.</p>
+								</div>
+								<div class="work-img work-img-5"></div>
+							</div>
 						</div>
-						<div class="work-item work-item-3"><h2>Business Wisdom</h2><p>Going beyond business intelligence, IES will help you ask the right questions, design the means to collect the data your business needs, and make critical decisions. Immediate. Powerful. Tangible.</p><div class="work-img work-img-3"></div></div>
+						<div class="work-item work-item-3"  onclick="toggle_visibility('work-description-3');">
+							<h2>Business Wisdom</h2>
+							<div class="work-description-container" style="max-height: 0px" id="work-description-3">
+								<p>Going beyond business intelligence, IES will help you ask the right questions, design the means to collect the data your business needs, and make critical decisions. Immediate. Powerful. Tangible.</p>
+							</div>
+							<div class="work-img work-img-3"></div>
+							</div>
 					</div>
 				</div>
 			</div>
@@ -166,7 +196,20 @@
 	</div>
 </footer>
 <iframe name="secret-frame" width="0" height="0" border="0" style="display: none;"></iframe>
-	<script>
+
+	<script type="text/javascript">
+	    function toggle_visibility(id) {
+       		var e = document.getElementById(id);
+	        if(e.style.maxHeight == '0px'){
+	         	//e.style.display = 'block';
+	         	e.style.maxHeight = '500px';
+	        }else{
+	            //e.style.display = 'none';
+	     		e.style.maxHeight = '0px';
+	     	}
+	    }
+
+
 		document.getElementById("ss-submit").addEventListener("click", function(){
 		  
 		  
