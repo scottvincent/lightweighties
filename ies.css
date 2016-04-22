@@ -451,13 +451,14 @@ figure{
 	display: inline-block;
 	min-width: 25%;
 	font-size: 1.2rem;
-	color: #1F8478;
+	color: #1F4283;
 	text-decoration: none;
+	padding: 0 1rem;
 }
+
 .contact-info span{
 	font-size: 0.8rem;
 	color: #4b4b4D;
-	font-weight: 700;
 }
 .address{
 	text-align: center;
@@ -502,6 +503,14 @@ figure{
 	.contact-form, .contact-form input, .contact-form select, .contact-form textarea, .contact-form button{
 		font-size: 1.2rem;
 	}
+	.contact-form input, .contact-form select, .contact-form textarea{
+		width: 100%;
+		margin: 0.5rem 0;
+    	padding: 0.25rem;
+	}
+	.contact-info:nth-of-type(1) { order: 2; }
+	.contact-info:nth-of-type(2) { order: 3; }
+	.contact-info:nth-of-type(3) { order: 1; }
 	footer{
 		text-align: center;
 	}
