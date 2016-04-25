@@ -1,0 +1,17 @@
+.work{
+    display: block;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.work-item{
+    display: block;
+    padding-top: 200px;
+}
+.work-description-container{
+    max-height: 1000px;
+}
+.work-img{
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
