@@ -24,16 +24,16 @@
 			<div class="work">
 				<div class="work-left">
 					<div class="work-nested">
-						<div class="work-item work-item-1" onclick="toggle_visibility('work-description-1');">
+						<div class="work-item work-item-1" onclick="toggle_visibility(this)">
 							<h2>Web Applications</h2>
-							<div class="work-description-container" style="max-height: 0px" id="work-description-1">
+							<div class="work-description-container">
 								<p>Complex, useful, web applications built with the end user experience in mind. Using up to date technologies and keeping up with design trends make for well received end products.</p>
 							</div>
 							<div class="work-img work-img-1"></div>
 						</div>
-						<div class="work-item work-item-2" onclick="toggle_visibility('work-description-2');">
-							<h2>Technology Infrastructure</h2>
-							<div class="work-description-container" style="max-height: 0px" id="work-description-2">
+						<div class="work-item work-item-2" onclick="toggle_visibility(this)">
+							<h2>Technology</h2>
+							<div class="work-description-container">
 								<p>Assess hardware and software environment goals. Overcoming challenges to provide the cost effective, vendor agnostic, path to achieve your goals. Identify risk, scale, and deliver effectively.</p>
 							</div>
 							<div class="work-img work-img-2"></div>
@@ -43,24 +43,24 @@
 				<div class="work-right">
 					<div class="work-nested">
 						<div class="work-right-nested">
-							<div class="work-item work-item-4" onclick="toggle_visibility('work-description-4');">
+							<div class="work-item work-item-4" onclick="toggle_visibility(this)">
 								<h2>Big Idea Incubator</h2>
-								<div class="work-description-container" style="max-height: 0px" id="work-description-4">
+								<div class="work-description-container">
 									<p>Enabling ideas to be built from the ground up into skyscrapers.</p>
 								</div>
 								<div class="work-img work-img-4"></div>
 							</div>
-							<div class="work-item work-item-5" onclick="toggle_visibility('work-description-5');">
+							<div class="work-item work-item-5" onclick="toggle_visibility(this)">
 								<h2>Healthcare Solutions</h2>
-								<div class="work-description-container" style="max-height: 0px" id="work-description-5">
+								<div class="work-description-container">
 									<p>Deep vertical expertise in one of the most complex industries that exist today. We help healthcare providers meet the huge market demand for real-time information sharing and collaboration. Highly secure. Cost effective. Policy aware.</p>
 								</div>
 								<div class="work-img work-img-5"></div>
 							</div>
 						</div>
-						<div class="work-item work-item-3"  onclick="toggle_visibility('work-description-3');">
+						<div class="work-item work-item-3" onclick="toggle_visibility(this)">
 							<h2>Business Wisdom</h2>
-							<div class="work-description-container" style="max-height: 0px" id="work-description-3">
+							<div class="work-description-container">
 								<p>Going beyond business intelligence, IES will help you ask the right questions, design the means to collect the data your business needs, and make critical decisions. Immediate. Powerful. Tangible.</p>
 							</div>
 							<div class="work-img work-img-3"></div>
@@ -198,17 +198,18 @@
 <iframe name="secret-frame" width="0" height="0" border="0" style="display: none;"></iframe>
 
 	<script type="text/javascript">
-	    function toggle_visibility(id) {
-       		var e = document.getElementById(id);
-	        if(e.style.maxHeight == '0px'){
-	         	//e.style.display = 'block';
-	         	e.style.maxHeight = '500px';
-	        }else{
-	            //e.style.display = 'none';
-	     		e.style.maxHeight = '0px';
-	     	}
+	    function toggle_visibility(param) {
+       		var x = document.getElementsByClassName("open-work");
+       		var i;
+       		if(param.classList.contains("open-work")){
+       			param.classList.remove("open-work");
+       		}else{
+	         	for (i = 0; i < x.length; i++) {
+				    x[i].classList.remove("open-work");  
+				}
+				param.classList.add("open-work");
+			}
 	    }
-
 
 		document.getElementById("ss-submit").addEventListener("click", function(){
 		  

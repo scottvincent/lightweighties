@@ -190,10 +190,6 @@ figure{
 	transition: all 0.2s ease-out;
 
 }
-.work-item:hover .work-img{
-	-webkit-filter: grayscale(0%) opacity(1);
-	filter: grayscale(0%) opacity(1);
-}
 .work-img-1{
 	background-image: url("img/header-mediasonar.png");
 } 
@@ -244,21 +240,27 @@ figure{
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+	max-height: 0;
 }
 .work-item p{
-	
 	background-color: #fff;
     color: #302E2F;
 	padding: 0.25rem 0.5rem;
     margin-top: 0.25rem;
     font-size: 0.875rem;
     font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-	
 	border-radius: 2px;
 	margin-bottom: 0;
 }
 .work-item:hover p{
 
+}
+.work-item.open-work .work-description-container{
+	max-height: 1000px;
+}
+.work-item.open-work .work-img{
+	-webkit-filter: grayscale(0%) opacity(1);
+	filter: grayscale(0%) opacity(1);
 }
 .work-types{
 	margin: 1rem 0;
