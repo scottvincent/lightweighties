@@ -6,8 +6,6 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" sizes="144x144" href="apple-icon.png">
 	<title>IES Group Inc. | Brand Assets</title>
-	<link href='ies.css' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic|Montserrat' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<header>
@@ -166,5 +164,26 @@
 		<a href="http://www.facebook.com/pages/IES-Group-Inc/136235419780609?fref=ts" target="_blank">Facebook</a>
 	</div>
 </footer>
+<noscript id="deferred-styles">
+	  <link rel="stylesheet" type="text/css" href="ies.css"/>
+	  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic|Montserrat' rel='stylesheet' type='text/css'>
+	</noscript>
+	<script>
+	  var loadDeferredStyles = function() {
+	    var addStylesNode = document.getElementById("deferred-styles");
+	    var replacement = document.createElement("div");
+	    replacement.innerHTML = addStylesNode.textContent;
+	    document.body.appendChild(replacement)
+	    addStylesNode.parentElement.removeChild(addStylesNode);
+	  };
+	  var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+	      webkitRequestAnimationFrame || msRequestAnimationFrame;
+	  if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+	  else window.addEventListener('load', loadDeferredStyles);
+	</script>
+	
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="all-ie-only.css" />
+	<![endif]-->
 </body>
 </html>
