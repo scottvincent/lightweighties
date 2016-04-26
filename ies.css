@@ -76,23 +76,6 @@ h2{
 figure{
 	font-size: 0.8rem;
 }
-.download-btn{
-	background: none;
-	border: 1px solid #1F8478;
-	color: #1F8478;
-	padding: 0.3em 0.75em;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 0.75rem;
-	font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-	cursor: pointer;
-	border-radius: 2px;
-}
-.download-btn:hover{
-	background-color: #1F8478;
-	color: #fff;
-	text-decoration: none;
-}
 .logo{
 	max-width: 50vw;
 	border: 0;
@@ -311,78 +294,6 @@ figure{
 	color: #fff;
 	font-size: 1.1rem;
 }
-.logos {
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	justify-content: flex-start;
-	margin-bottom: 2rem;
-}
-.logos figure{
-	margin: 0.5rem 1rem;
-}
-.logos figure figcaption{
-	margin-bottom: 0.5rem;
-}
-.logos figure figcaption div{
-	font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-	color: #4B4B4D;
-	display: block;
-}
-.logos figure img{
-	box-shadow: 0 0 0px 1px #4b4b4d;
-	display: block;
-	margin-bottom: 0.5rem;
-}
-.logo-white{
-	background-color: #1F4283;
-	border-color: #fff;
-}
-.palette {
-	display: flex;
-	-webkit-flex-flow: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-content: stretch;
-	margin-bottom: 2rem;
-}
-.palette figure{
-	min-height: 50px;
-	padding: 1rem;
-	margin: 0 2px 1rem;
-	flex-grow: 1;
-}
-.palette figure figcaption{
-	font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-	display: inline-block;
-	float: left;
-}
-.palette figure.dark-blue{
-	background: #1F4283;
-	color: #fff;
-}
-.palette figure.light-blue{
-	background: #4883C4;
-	color: #fff;
-}
-.palette figure.dark-teal{
-	background: #1F8478;
-	color: #fff;
-}
-.palette figure.light-teal{
-	background: #449A9E;
-	color: #fff;
-}
-.palette figure.grey{
-	background: #4B4B4D;
-	color: #fff;
-}
-.palette figure.dark-grey{
-	background: #302E2F;
-	color: #fff;
-}
-.verdana{
-	font-family: Verdana, Arial, sans-serif;
-}
 .contact-form, .contact-form input, .contact-form select, .contact-form textarea, .contact-form button{
 	font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
 
@@ -471,9 +382,6 @@ figure{
 @media (max-width: 768px){
 	html{
 		font-size: 16px;
-	}
-	.work figure{
-		width: 100%;
 	}
 	.work, .work-left, .work-right, .work-nested, .work-right-nested{
 		display: block;

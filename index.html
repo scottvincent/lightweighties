@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" sizes="144x144" href="apple-icon.png">
-	<title>IES Group Inc.</title>
-	<link rel="stylesheet" type="text/css" href="ies.css"/>
-</head>
-<body>
-	
+	<head>
+		<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" sizes="144x144" href="apple-icon.png">
+		<title>IES Group Inc.</title>
+		<link rel="stylesheet" type="text/css" href="ies.css"/>
+	</head>
+	<body>
 		<header class="home">
 			<nav>
 				<a href="index.html">
@@ -196,62 +195,62 @@
 </footer>
 <iframe name="secret-frame" width="0" height="0" border="0" style="display: none;"></iframe>
 
-	<script type="text/javascript">
-	    function toggle_visibility(param) {
-       		var x = document.getElementsByClassName("open-work");
-       		var i;
-       		if(param.classList.contains("open-work")){
-       			param.classList.remove("open-work");
-       		}else{
-	         	for (i = 0; i < x.length; i++) {
-				    x[i].classList.remove("open-work");  
+		<script type="text/javascript">
+		    function toggle_visibility(param) {
+	       		var x = document.getElementsByClassName("open-work");
+	       		var i;
+	       		if(param.classList.contains("open-work")){
+	       			param.classList.remove("open-work");
+	       		}else{
+		         	for (i = 0; i < x.length; i++) {
+					    x[i].classList.remove("open-work");  
+					}
+					param.classList.add("open-work");
 				}
-				param.classList.add("open-work");
+		    }
+
+			document.getElementById("ss-submit").addEventListener("click", function(){
+			  
+			  
+			  document.getElementById("loading").style.display = 'inline-block';
+			  document.getElementById("ss-submit").style.display = 'none';
+			  // replace "ss-form" with the ID of your form
+			 
+			  setTimeout(function() { 
+			  	document.getElementById("ss-form").reset();
+			    document.getElementById("ss-form").innerHTML = "<div style='text-align:center'>Thanks for the message, we'll get back to you shortly.</div>" ;
+			  }, 5000);
+			});
+
+			var te = document.querySelector('textarea');
+			te.addEventListener('keyup', resizeTextarea);
+
+			function resizeTextarea(ev) {
+				this.style.height = '20px';
+				this.style.height = this.scrollHeight + 0 + 'px';
 			}
-	    }
+		</script>
 
-		document.getElementById("ss-submit").addEventListener("click", function(){
-		  
-		  
-		  document.getElementById("loading").style.display = 'inline-block';
-		  document.getElementById("ss-submit").style.display = 'none';
-		  // replace "ss-form" with the ID of your form
-		 
-		  setTimeout(function() { 
-		  	document.getElementById("ss-form").reset();
-		    document.getElementById("ss-form").innerHTML = "<div style='text-align:center'>Thanks for the message, we'll get back to you shortly.</div>" ;
-		  }, 5000);
-		});
-
-		var te = document.querySelector('textarea');
-		te.addEventListener('keyup', resizeTextarea);
-
-		function resizeTextarea(ev) {
-			this.style.height = '20px';
-			this.style.height = this.scrollHeight + 0 + 'px';
-		}
-	</script>
-
-	<noscript id="deferred-styles">
-	  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic|Montserrat' rel='stylesheet' type='text/css'>
-	</noscript>
-	<script>
-	  var loadDeferredStyles = function() {
-	    var addStylesNode = document.getElementById("deferred-styles");
-	    var replacement = document.createElement("div");
-	    replacement.innerHTML = addStylesNode.textContent;
-	    document.body.appendChild(replacement)
-	    addStylesNode.parentElement.removeChild(addStylesNode);
-	  };
-	  var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-	      webkitRequestAnimationFrame || msRequestAnimationFrame;
-	  if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-	  else window.addEventListener('load', loadDeferredStyles);
-	</script>
-	
-	<!--[if IE]>
-		<link rel="stylesheet" type="text/css" href="all-ie-only.css" />
-	<![endif]-->
-	
-</body>
+		<noscript id="deferred-styles">
+		  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic|Montserrat' rel='stylesheet' type='text/css'>
+		</noscript>
+		<script>
+		  var loadDeferredStyles = function() {
+		    var addStylesNode = document.getElementById("deferred-styles");
+		    var replacement = document.createElement("div");
+		    replacement.innerHTML = addStylesNode.textContent;
+		    document.body.appendChild(replacement)
+		    addStylesNode.parentElement.removeChild(addStylesNode);
+		  };
+		  var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+		      webkitRequestAnimationFrame || msRequestAnimationFrame;
+		  if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+		  else window.addEventListener('load', loadDeferredStyles);
+		</script>
+		
+		<!--[if IE]>
+			<link rel="stylesheet" type="text/css" href="all-ie-only.css" />
+		<![endif]-->
+		
+	</body>
 </html>
