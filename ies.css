@@ -191,20 +191,20 @@ figure{
 
 }
 .work-img-1{
-	background-image: url("img/header-mediasonar.png");
+	background-image: url("img/header-mediasonar-min.png");
 } 
 .work-img-2{
-	background-image: url("img/header-daimler.png");
+	background-image: url("img/header-daimler-min.png");
 } 
 .work-img-3{
-	background-image: url("img/header-wisdom.png");
+	background-image: url("img/header-wisdom-min.png");
 	background-position: bottom left;
 } 
 .work-img-4{
-	background-image: url("img/header-diply.png");
+	background-image: url("img/header-diply-min.png");
 } 
 .work-img-5{
-	background-image: url("img/header-connex.png");
+	background-image: url("img/header-connex-min.png");
 } 
 .work h2{
 	text-transform: uppercase;
