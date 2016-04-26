@@ -237,6 +237,10 @@ figure{
 	z-index: 2;
 	overflow: hidden;
 	max-height: 0;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
 }
 .work-item p{
 	background-color: #fff;
@@ -450,7 +454,7 @@ figure{
 	-webkit-flex-flow: row wrap;
 	justify-content: space-around;
 	align-items: center;
-
+	flex-wrap: wrap;
 }
 .contact-info{
 	font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
