@@ -212,24 +212,56 @@ figure{
     z-index: 2;
     background-color: #fff;
     //background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScyODgnIGhlaWdodD0nMjg4JyB2aWV3Qm94PScwIDAgMjg4IDI4OCc+Cgk8ZGVmcz4KCQk8cGF0dGVybiBpZD0nYmx1ZXN0cmlwZScgcGF0dGVyblVuaXRzPSd1c2VyU3BhY2VPblVzZScgeD0nMCcgeT0nMCcgd2lkdGg9JzE4JyBoZWlnaHQ9JzE4JyB2aWV3Qm94PScwIDAgMzYgMzYnID4KCQk8cmVjdCB3aWR0aD0nMTEwJScgaGVpZ2h0PScxMTAlJyBmaWxsPScjZmZmJy8+CgkJCTxwYXRoIGQ9J00xLDFoMzZ2MzZoLTM2di0zNicgZmlsbC1vcGFjaXR5PScwJyBzdHJva2Utd2lkdGg9JzEnIHN0cm9rZS1kYXNoYXJyYXk9JzAsMSwxJyBzdHJva2U9JyNkZGQnLz4KCQk8L3BhdHRlcm4+IAoJCTxmaWx0ZXIgaWQ9J2Z1enonIHg9JzAnIHk9JzAnPgoJCQk8ZmVUdXJidWxlbmNlIHR5cGU9J3R1cmJ1bGVuY2UnIHJlc3VsdD0ndCcgYmFzZUZyZXF1ZW5jeT0nLjIgLjMnIG51bU9jdGF2ZXM9JzUnIHN0aXRjaFRpbGVzPSdzdGl0Y2gnLz4KCQkJPGZlQ29sb3JNYXRyaXggdHlwZT0nc2F0dXJhdGUnIGluPSd0JyB2YWx1ZXM9JzAnLz4KCQk8L2ZpbHRlcj4KCTwvZGVmcz4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9J3VybCgjYmx1ZXN0cmlwZSknLz4KPHJlY3Qgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScgZmlsdGVyPSd1cmwoI2Z1enopJyBvcGFjaXR5PScwLjEnLz4KPC9zdmc+Cg==);
-
+	border: 4px solid #302e2f;
     padding: 0.25rem 0.5rem;
     border-radius: 2px;
 }
+.work-item p{
+	background-color: #fff;
+    color: #302E2F;
+	padding: 0.25rem 0.5rem;
+    margin-top: 0;
+    font-size: 0.875rem;
+    font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+	border-radius: 2px;
+	margin-bottom: 0;
+	border: 4px solid #302e2f;
+	border-top: 0;
+}
 .work-item-1 h2{
 	color: #1F4283;
+	border-color: #1F4283;
 }
 .work-item-2 h2{
 	color: #1F8478;
+	border-color: #1F8478;
 }
 .work-item-3 h2{
 	color: #1F4283;
+	border-color: #1F4283;
 }
 .work-item-4 h2{
 	color: #4883C4;
+	border-color: #4883C4;
 }
 .work-item-5 h2{
 	color: #449A9E;
+	border-color: #449A9E;
+}
+.work-item-1 p{
+	border-color: #1F4283;
+}
+.work-item-2 p{
+	border-color: #1F8478;
+}
+.work-item-3 p{
+	border-color: #1F4283;
+}
+.work-item-4 p{
+	border-color: #4883C4;
+}
+.work-item-5 p{
+	border-color: #449A9E;
 }
 .work-description-container{
 	z-index: 2;
@@ -240,16 +272,7 @@ figure{
 	-o-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
 }
-.work-item p{
-	background-color: #fff;
-    color: #302E2F;
-	padding: 0.25rem 0.5rem;
-    margin-top: 0.25rem;
-    font-size: 0.875rem;
-    font-family: "Montserrat", "Lato", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-	border-radius: 2px;
-	margin-bottom: 0;
-}
+
 .work-item:hover p{
 
 }
