@@ -495,6 +495,12 @@ figure{
 	html{
 		font-size: 16px;
 	}
+	h1{
+		font-size: 2rem;
+	}
+	h2{
+		font-size: 1.9rem;
+	}
 	.work figure{
 		width: 100%;
 	}
