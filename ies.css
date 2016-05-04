@@ -28,7 +28,6 @@ body{
 }
 header{
 	padding:0 10px;
-
 	background: transparent;
 	border: none;
 }
@@ -60,13 +59,13 @@ h1,h2,h3{
 	font-weight: 400;
 }
 h1{
-	background-color: #4883C4;
+	border-bottom: 3px solid #4883C4;
 	margin: 0;
-	color: #fff;
+	color: #449A9E;
 	font-size: 2.7rem;
 	letter-spacing: -0.1rem;
 	padding: 0.125rem 0.5rem;
-	border-radius: 2px;
+	//border-radius: 2px;
 }
 h2{
 	font-size: 2.3rem;
