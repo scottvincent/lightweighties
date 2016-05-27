@@ -137,7 +137,7 @@ figure{
 
 }
 .work-item{
-	padding: 15vh 1rem 1rem;
+	padding: 0 1rem 1rem;
 	margin: 0.125rem;
 	display: flex;
 	flex-direction: column;
