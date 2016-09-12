@@ -1,0 +1,17 @@
+User-Agent: *
+Disallow: /new/
+Disallow: /dnn3/
+Disallow: /templates/
+Disallow: /industrialengineering/
+Disallow: /businessintelligence/
+Disallow: /labpro/
+Disallow: /TimeTracker/
+Disallow: /ProjectInfo/
+Disallow: /VaultService/
+Disallow: /VET/
+Disallow: /Temp/
+Disallow: /blog [old]/
+Disallow: /blog/
+Disallow: /aspnet_client/
+Disallow: /DorchesterDolphins/
+Sitemap: http://www.iesgroup.ca/sitemap.xml
