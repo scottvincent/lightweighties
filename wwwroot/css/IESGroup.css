@@ -50,6 +50,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+h2{
+	font-size: 2em;
+	line-height: 2;
+}
 
 /*	BASIC STYLING */
 #wrapper {
@@ -452,6 +456,45 @@ table {
 	font-weight: bold;
 	color: #666;
 }
+
+.inventory-table{
+	width: 100%;
+	font-size: 13px;
+}
+.inventory-table thead{
+	font-weight: bold;
+	color: #fff;
+	background: #444;
+	border: 1px solid #ccc;
+}
+.inventory-table tr{
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.inventory-table tr.disabled{
+	background: #999;
+	text-decoration: line-through;
+}
+.inventory-table tr:nth-child(odd){
+	background: rgba(0,0,0,0.05);
+}
+.inventory-table td{
+	border-right: 1px solid #ccc;
+	padding: 0 5px;
+	line-height: 1.5;
+}
+.inventory-table td:nth-child(6), 
+.inventory-table td:nth-child(5), 
+.inventory-table td:nth-child(4){
+	text-align: center;
+}
+.inventory-table td:nth-child(8), 
+.inventory-table td:nth-child(9), 
+.inventory-table td:nth-child(7),
+.inventory-table td:first-child{
+	text-align: right;
+}
+
 /*STANDARD BUTTON STYLING*/
 
 .green_but {
