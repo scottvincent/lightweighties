@@ -733,6 +733,7 @@ input.green_but{
 	border: none;
 	text-decoration:none;
 	margin: 5px;
+	display: none;
 }
 
 /* CONTACT FORM ERRORS */
